@@ -1,0 +1,31 @@
+$button-color: rgb(58, 128, 186);
+
+.page-numbers-wrapper {
+  margin: 50px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 50%;
+}
+
+.page-number {
+  border-radius: .3em;
+  text-align: center;
+  color: white;
+  background-color: $button-color;
+  margin: 0 5px;
+  padding: 10px;
+  transition: 500ms;
+
+  &:hover {
+    background-color: lightblue;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+}

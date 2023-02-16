@@ -1,0 +1,29 @@
+$app-bar-color: rgb(58, 128, 186);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-bar {
+  height: 72px;
+  background-color: $app-bar-color;
+  font-size: 14px;
+  color: white
+}
+
+@media (max-width: 600px) {
+  .app-bar {
+    height: 50px;
+    font-size: 10px;
+    color: white;
+  }
+}
+
+
+.justify-center {
+  @include flex-center;
+  justify-content: left;
+  padding-left: 70px;
+}

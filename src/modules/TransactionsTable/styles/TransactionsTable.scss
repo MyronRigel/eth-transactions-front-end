@@ -1,0 +1,60 @@
+$main-color: rgb(58, 128, 186);
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 3% 10%;
+}
+
+.table {
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  margin: 50px 0;
+  width: 100%;
+  table-layout: fixed;
+
+  td {
+    overflow: hidden;
+    padding: 10px 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  thead {
+    color: white;
+    background-color: $main-color;
+
+    th {
+      padding: 15px;
+    }
+
+    tr {
+      padding: 15px 30px;
+      text-align: left;
+
+      th {
+        margin: 10px 10px;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+
+    tr:last-of-type {
+      border-bottom: 2px solid $main-color;
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .table {
+    word-break: break-word;
+  }
+}

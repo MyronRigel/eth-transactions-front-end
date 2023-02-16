@@ -1,0 +1,54 @@
+$button-color: rgb(58, 128, 186);
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  height: 4em;
+  width: 4em;
+  border-radius: 1em;
+  color: white;
+  background-color: $button-color;
+  margin: 0 15px;
+  transition: 500ms;
+  &:hover {
+    background-color: lightblue;
+    cursor: pointer;
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35em;
+  height: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: 3px solid #f3f3f3;
+
+  input {
+    width: 80%;
+    font-size: 16px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    width: content-box;
+    font-size: 16px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.splitter {
+  background-color: lightgray;
+  width: 1px;
+  height: 190%;
+  margin: 0 10px ;
+}

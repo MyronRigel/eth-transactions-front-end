@@ -1,0 +1,1 @@
+export const API_URL = 'https://eth-transactions-back-end.onrender.com'
